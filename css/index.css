@@ -202,8 +202,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.mainHeading {
+.headingCenter {
   text-align: center;
+}
+.mainHeading {
   margin: 0 auto;
   font-size: 3.5rem;
   margin: 20px 0 40px 0;
