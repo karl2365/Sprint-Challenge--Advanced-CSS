@@ -1,3 +1,14 @@
+@keyframes nav {
+  from {
+    background-color: #F6F6F6;
+    color: #5E6164;
+  }
+  to {
+    background-color: #81848E;
+    color: #F6F6F6;
+  }
+}
+/* The animation code */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -161,6 +172,11 @@ p {
   margin: 0 auto;
 }
 nav {
+  position: fixed;
+  top: 60px;
+  left: 35%;
+  background: #F6F6F6;
+  opacity: 0.6;
   display: flex;
   justify-content: center;
 }
@@ -173,6 +189,8 @@ nav a {
 nav a:hover {
   color: #F6F6F6;
   background: black;
+  animation-name: nav;
+  animation-duration: 3s;
 }
 footer {
   color: #22283B;
@@ -188,7 +206,7 @@ footer {
   text-align: center;
   margin: 0 auto;
   font-size: 3.5rem;
-  margin-top: 20px;
+  margin: 20px 0 40px 0;
 }
 .home .headImage {
   width: 95%;
@@ -273,19 +291,20 @@ footer {
 .home .walk-text .btn a:hover {
   color: #22283A;
   background: #F6F6F6;
+  animation-name: nav;
+  animation-duration: 3s;
 }
 .home .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk-text .walk-img img.btmImg {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 10px solid red;
-}
 @media (max-width: 500px) {
   .home .walk-text .walk-img {
     width: 95%;
   }
+}
+.home .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }

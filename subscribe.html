@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Fun Bus Travel Agency - Select Package</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  
+     
+  <div class="container home">
+
+    <header class="header">
+      
+      <div class="top">
+        <h1>Fun Bus</h1>
+          
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+      
+        </nav>
+      </div>
+    </header> 
+
+
+
+
+
+        <div class="contactContainer">
+                <form action="" class="form" id="form">
+                    <h2>Please complete this form to select a package</h2>
+                    <label for="name">Name:</label>
+                        <input type="text" id="fname"><br>
+                    
+                    <label for="address">Street address:</label>
+                        <input type="text" id="address"><br>
+    
+                    <label for="city">City: </label>
+                        <input type="text" id="city"><br>
+    
+                    <label for="state">State:</label>
+                        <input type="text" id="state"><br>
+    
+                    <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip"><br>
+    
+                    <label for="phone">Phone:</label>
+                        <input type="text" id="phone" ><br>
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email"><br>
+
+                        <label for="package">Package:</label>
+                        <input type="text" id="package"><br>
+
+                        <label for="instructions">Instructions:</label>
+                        <textarea rows="10" cols="40" id="instructions" ></textarea><br>
+
+                    <label for='submit'>Submit Info:</label>
+                        <input type="button" value="submit" onclick="myFun()">
+                    
+                    </form>
+    
+    
+            </div>
+    </div>
+
+    <script>
+
+
+        function myFun(){
+            window.open("./confirm.html","_self");
+        
+        }
+    </script>
+    </body>
+</html>
